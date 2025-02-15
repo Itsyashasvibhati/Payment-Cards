@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+           /* min-height: 1200px; */
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .image1 img{
+       
+        display: flex;
+      justify-content: row;
+      align-items: start;
+      border-radius: 25px;
+      margin-right: 75px;
+      margin-bottom: 250px;
+      background-color: transparent;
+      
+      
+    }
+        .imagebox1{
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
+        .card{
+            width: 350px;
+            height: 500px;
+            background-color: white;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;   /*gap in next line */
+           
+
+        }
+        .card img{
+            width: 100%;  /* we do in % then it equal to its parent*/
+            height: 200px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+           /* transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function: ease-out;
+            transition: width 10s, height 20s; */
+           
+        }
+       .textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      /*  padding: 10%;  /* used % to align in center*/   
+        text-align: center;
+      
+       }
+       #amountbox{
+        background-color: rgb(98, 164, 230);
+        width: 250px;
+        height: 50px;
+       border-radius: 5px;
+       display: flex;
+       justify-content: space-between;
+    
+       padding: 10px;
+    }
+
+    #leftbox{
+       /* width: fit-content; */
+    
+        display: flex;
+        justify-content: space-evenly;
+
+        gap: 15px;
+        align-items: center;
+
+    }
+    .imgbox img{
+       height: 30px;
+    }
+
+    #textAmountBox p{
+       
+    }
+
+    .rightbox{
+        display: flex;
+       align-items: center;
+    }
+
+    .rightbox a{
+        display: flex;
+       align-items: center;
+    }
+    
+  
+         #paymentButton{
+            width: 180px;
+            height: 40px;
+            background-color: #114292;
+            border-radius: 5px;
+            color: #D9AFD9;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            
+            
+         }
+         .cancelbox a{
+            text-decoration: none;
+            color: rgb(75, 72, 72);
+            font-weight: bold;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           padding-right: 20px;
+         }
+
+        
+
+       
+    </style>
+
+</head>
+<body>
+    <div class="container">
+       <div class="image1">
+        <img src="download (1).png" >
+       
+       </div>
+        <div class="card">
+<img src="images.jpeg" >
+<div class="textbox">
+    <h2>Doraemon</h2>
+    <p>
+      "🎟️Unlock adventures with your very own 
+        Doraemon Pass! Your ticket to endless fun and excitement!🐾"
+      
+       #DoraemonPass #AdventureUnlocked #FunTimes"
+    </p>
+</div>
+       <div id="amountbox">
+        <div id="leftbox">
+             <div class="imgbox">
+                <img src="download.png" >
+            
+             </div>
+             <div id="textAmountBox">
+                <p>Amount $5</p>
+               
+             </div>
+        </div>
+            <div class="rightbox">
+                 <a href="a">change</a>
+
+            </div>
+       </div>
+       <button id="paymentButton">
+           Proceed to Pay
+       </button>
+       <div class="cancelbox">
+        <a href="a">Cancel Payment</a>
+       </div>
+
+  </div>
+    </div>
+</body>
+</html>
